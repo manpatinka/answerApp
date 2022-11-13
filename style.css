@@ -78,3 +78,24 @@ h1 {
     -moz-border-radius: 0.3125rem;
     border-radius: 0.3125rem;
   }
+
+  .goback {
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .goback:hover {
+    text-decoration: none;
+  }
+
+
+  main p {
+    margin-top: 4%;
+  }
+
+  h2 {
+    margin-top: 5%;
+    font-size: 2rem;
+    color: white;
+    text-shadow: #9a044a 1px 0 20px;
+  }

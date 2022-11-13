@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sono&display=swap" rel="stylesheet">
+    <title>Answer Finder</title>
+
+</head>
+<body>
+    <main>
+        <h2></h2>
+        <p><a href="./index.html" class="goback">go back</a></p>
+    </main>
+    <script>
+        const allAnswers = ['No doubt!', 'Obviosly!', 'Yes, but not now', 'For now it\'s unpredictable.', 'Forget about it', 'It only depends on your actions', 'No for now, but it may change.', 'You already know the answer yourself.'];
+       
+        
+        let answer = () => {
+            let answersCount = allAnswers.length;
+            let answerIndex = Math.floor(Math.random() * answersCount);
+            return allAnswers[answerIndex];
+        }
+        
+        let yourAnswer = () => {
+            let yA = answer();
+            document.getElementsByTagName("h2")[0].innerHTML = yA;
+        }
+        
+        yourAnswer();</script>
+</body>
+</html>
